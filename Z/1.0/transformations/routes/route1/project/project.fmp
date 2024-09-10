@@ -19,9 +19,22 @@
         <mappermodel:OutputPins>str</mappermodel:OutputPins>
         <mappermodel:Properties/>
       </mappermodel:FunctionGraphNode>
+      <mappermodel:FunctionGraphNode label="MyCutomFunclet:DateUtil.getUTCTime(java.lang.String arg1,java.lang.String arg2)" type="69" x="208" y="102">
+        <mappermodel:InputPins>arg1,arg2</mappermodel:InputPins>
+        <mappermodel:OutputPins>R</mappermodel:OutputPins>
+        <mappermodel:Properties/>
+      </mappermodel:FunctionGraphNode>
       <mappermodel:Link inputID="1" inputIndex="0" outputID="2" outputIndex="0"/>
       <mappermodel:Link inputID="0" inputIndex="0" outputID="1" outputIndex="0"/>
     </mappermodel:GraphModel>
   </mappermodel:Mappings>
-  <mappermodel:Extensions/>
+  <mappermodel:Extensions>
+    <mappermodel:Extension language="java" name="MyCutomFunclet">
+      <mappermodel:Script>DateUtil</mappermodel:Script>
+      <mappermodel:Function name="public static java.lang.String DateUtil.getUTCTime(java.lang.String,java.lang.String)">
+        <mappermodel:Argument datatype="java.lang.String" name="arg1"/>
+        <mappermodel:Argument datatype="java.lang.String" name="arg2"/>
+      </mappermodel:Function>
+    </mappermodel:Extension>
+  </mappermodel:Extensions>
 </mappermodel:MapperProject>
